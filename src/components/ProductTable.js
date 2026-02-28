@@ -22,9 +22,9 @@ export const ProductTable = ({
     localStorage.setItem("database", JSON.stringify(filteredData));
   };
 
-  const fruitData = filteredData.filter((item) => item.category == "Fruits");
+  const fruitData = filteredData.filter((item) => item.category === "Fruits");
   const vegetableData = filteredData.filter(
-    (item) => item.category == "Vegetables",
+    (item) => item.category === "Vegetables",
   );
   return (
     <div>
